@@ -1,0 +1,37 @@
+.pagination {
+    justify-content: center;
+    align-items: center;
+    padding-top: 36px;
+    flex-wrap: nowrap;
+
+    a {
+        color: $gray-2;
+        font-size: 18px;
+        display: block;
+        padding: 12px 16px;
+        &:hover {
+            background-color: #000;
+            color: #FFF;
+        }
+    }
+
+    li {
+        border: 1px solid $gray-2;
+        margin-left: -1px;
+    }
+    @include tablet {
+        padding-top: 40px;
+    }
+    @include phone-m {
+        a {
+            padding: 12px 10px;
+        }
+    }
+    @include phone {
+        padding-top: 20px;
+        a {
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+}

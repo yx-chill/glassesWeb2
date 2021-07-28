@@ -1,0 +1,13 @@
+.menu {
+    li {
+        a {
+            display: block;
+            color: #FFF;
+
+            &:hover {
+                color: $secondary;
+                background-color: #FFF;
+            }
+        }
+    }
+}

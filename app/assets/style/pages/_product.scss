@@ -1,0 +1,223 @@
+.product-banner_menu {
+    align-items: center;
+
+    li {
+        width: 33.33%;
+        border-left: 1px solid $border_color-3;
+        border-right: 1px solid $border_color-3;
+        border-bottom: 8px solid transparent;
+
+        img,
+        i {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            font-size: 48px;
+            margin-right: 10px;
+        }
+
+        a {
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 500;
+            color: #000;
+            padding: 26px 0;
+        }
+    }
+    .focus {
+        border-bottom: 8px solid $primery;
+    }
+
+    @include tablet {
+        li {
+
+            img,
+            i {
+                width: 32px;
+                height: 32px;
+                font-size: 32px;
+                margin-right: 8px;
+            }
+
+            a {
+                font-size: 24px;
+                padding: 14px 0;
+            }
+        }
+    }
+
+    @media(max-width: 900px) {
+        li {
+            a {
+                font-size: 28px;
+            }
+        }
+    }
+
+    @media(max-width: 700px) {
+        li {
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @include phone-m {
+        li {
+            border-bottom: 4px solid transparent;
+
+            img,
+            i {
+                width: 15px;
+                height: 15px;
+                font-size: 15px;
+                margin-right: 2px;
+            }
+
+            a {
+                font-size: 14px;
+                padding: 5px 0;
+            }
+        }
+        .focus {
+            border-bottom: 4px solid $primery;
+        }
+    }
+
+}
+.banner-photo {
+    img {
+        object-fit: cover;
+    }
+    .banner-photo {
+        width: 50%;
+    }
+    .photo-sm {
+        display: none;
+    }
+    @include tablet {
+        .photo-md {
+            display: none;
+        }
+        .photo-sm {
+            display: block;
+        }
+    }
+}
+.product-list {
+    justify-content: space-between;
+    li {
+        width: 23%;
+        margin-bottom: 104px;
+        img {
+            width: 100%;
+        }
+        h3 {
+            justify-content: space-between;
+            font-size: 24px;
+            span {
+                color: $primery;
+            }
+        }
+        .color {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+        .color-darkbrown {
+            background-color: $darkbrown;
+        }
+        .color-brown {
+            background-color: $brown;
+        }
+    }
+    @include tablet {
+        li {
+            width: 48%;
+            margin-bottom: 72px;
+        }
+        .product-md {
+            display: none;
+        }
+    }
+    @include phone-m {
+        li {
+            width: 100%;
+            margin-bottom: 32px;
+            h3 {
+                font-size: 16px;
+            }
+            .color {
+                width: 16px;
+                height: 16px;
+                margin-right: 4px;
+            }
+        }
+        .product-sm {
+            display: none;
+        }
+    }
+}
+.product .pagination {
+    margin-top: -8px;
+    @include phone-m {
+        margin-top: 8px;
+    }
+}
+.sunglasses {
+    .product-list {
+        li {
+            width: 30%;
+        }
+        @include tablet {
+            li {
+                width: 48%;
+            }
+        }
+        @include phone-m {
+            li {
+                width: 100%;
+            }
+            .photo-sm {
+                display: none;
+            }
+        }
+    }
+}
+.sunglasses {
+    .pagination {
+        display: none;
+    }
+    .product {
+        padding: 80px 0 96px;
+    }
+    @include tablet {
+        .product {
+            padding: 56px 0 24px;
+        }
+    }
+    @include phone-m {
+        .product {
+            padding: 32px 0 56px;
+        }
+        .pagination {
+            display: flex;
+            padding-top: 8px;
+        }
+    }
+}
+.functional {
+    display: none;
+    text-align: center;
+    font-size: 200px;
+    color: $gray;
+    @include tablet {
+        font-size: 150px;
+    }
+    @include phone-m {
+        font-size: 100px;
+    }
+}

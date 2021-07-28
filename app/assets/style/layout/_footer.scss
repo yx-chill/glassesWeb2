@@ -1,0 +1,135 @@
+.footer {
+    background-color: $primery;
+    padding: 44px 0 39px;
+    position: relative;
+    .footer-top {
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    .menu {
+        margin-left: -24px;
+        a {
+            padding: 8px 24px;
+        }
+    }
+    .social {
+        li {
+            margin-left: 32px;
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+    .footer-contact {
+        padding-bottom: 8px;
+        border-bottom: 1px solid #FFF;
+        li {
+            margin-bottom: 16px;
+            img {
+                width: 48px;
+                margin-right: 20px;
+            }
+            a {
+                font-size: 36px;
+                &:hover {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+    .copyright {
+        justify-content: space-between;
+        padding-top: 32px;
+        p {
+            color: #FFF;
+        }
+    }
+    .copyright-list {
+        li {
+            font-size: 14px;
+            margin-left: 48px;
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    @include tablet {
+        padding: 38px 0 32px;
+        .footer-top {
+            margin-bottom: 10px;
+        }
+        .menu {
+            margin-left: -20px;
+            a {
+                font-size: 14px;
+                padding: 8px 20px;
+            }
+        }
+        .social {
+            li {
+                width: 24px;
+                margin-left: 24px;
+            }
+        }
+        .footer-contact {
+            li {
+                margin-bottom: 12px;
+                img {
+                    width: 24px;
+                    margin-right: 10px;
+                }
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+        .copyright {
+            padding-top: 24px;
+        }
+        .copyright-list {
+            li {
+                margin-left: 24px;
+            }
+        }
+    }
+    @media (max-width: 600px){
+        .menu {
+            a {
+                padding: 8px 10px;
+            }
+        }        
+    }
+    @include phone-m {
+        padding: 25px 0;
+        .menu {
+            display: none;
+        }
+        .social {
+            position: absolute;
+            top: 25px;
+            right: 15px;
+        }
+        .footer-contact {
+            padding-bottom: 18px;
+            li {
+                margin-bottom: 6px;
+                img {
+                    width: 20px;
+                    margin-right: 4px;
+                }
+            }
+        }
+        .copyright {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 16px;
+        }
+        .copyright-list {
+            flex-direction: column;
+            align-items: flex-start;
+            li {
+                margin: 8px 0 0 0;
+            }
+        }
+    }
+}

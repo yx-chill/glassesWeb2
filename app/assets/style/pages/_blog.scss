@@ -1,0 +1,143 @@
+.blog-nav {
+    .nav {
+        @include phone-m {
+            display: none;
+        }
+    }
+}
+
+.blog {
+    padding: 40px 0 160px;
+
+    @include tablet {
+        padding: 32px 0 96px;
+    }
+
+    @include phone {
+        padding: 28px 0 56px;
+
+        .nav {
+            display: none;
+        }
+    }
+}
+
+.blog-list {
+    li {
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 60px;
+
+        .blog-photo {
+            width: 57%;
+        }
+    }
+
+    @include tablet {
+        li {
+            margin-bottom: 24px;
+        }
+    }
+
+    @include phone-m {
+        li {
+            margin-bottom: 20px;
+
+            .blog-photo {
+                width: 100%;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.blog-article {
+    width: 40%;
+    position: relative;
+
+    .content-title {
+        font-size: 32px;
+        color: $secondary;
+        margin-bottom: 2px;
+    }
+
+    .content-subtitle {
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+
+        time {
+            font-size: 16px;
+        }
+    }
+
+    .content {
+        padding: 24px 0 14px;
+
+        p {
+            font-size: 20px;
+        }
+
+        .more-sm {
+            font-size: 16px;
+            color: $gray-2;
+            font-weight: bold;
+            display: none;
+        }
+
+        .more-lg {
+            font-size: 36px;
+            font-weight: 900;
+            color: $secondary;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    @include tablet {
+        .content-title {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        .content-subtitle {
+            font-size: 16px;
+
+            sapn {
+                font-size: 14px;
+            }
+        }
+
+        .content {
+            padding: 32px 0 0;
+
+            p {
+                font-size: 14px;
+            }
+
+            .more-sm {
+                display: inline-block;
+            }
+
+            .more-lg {
+                display: none;
+            }
+        }
+    }
+
+    @include phone-m {
+        width: 100%;
+
+        .content-title {
+            font-size: 16px;
+        }
+
+        .content-subtitle {
+            font-size: 14px;
+        }
+
+        .content {
+            display: none;
+        }
+    }
+}
